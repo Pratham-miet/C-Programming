@@ -1,0 +1,60 @@
+#include<stdio.h>
+int main(){
+    char ch;
+    int x;
+    float y;
+    double z;
+    printf("Enter Character");
+    scanf("%c" , &ch);
+    printf("Enter Intger");
+    scanf("%d" , &x);
+    printf("Enter Float Value");
+    scanf("%f" , &y);
+    printf("Enter Double Value");
+    scanf("%lf" , &z);
+    printf("ch=%c x=%d y=%f z=%lf" ,ch,x,y,z);
+
+    return 0;
+}
+
+#include<stdio.h>
+int main(){
+    int x,y,sum,sub,mul,rem;
+    printf("Enter Two No.s x and y : ");
+    scanf("%d%d" ,&x,&y);
+    sum = x+y;
+    sub = x-y;
+    mul = x*y;
+    rem = x%y;
+    printf("Addition \t%d\n" , sum);
+    printf("Subtraction \t%d\n" , sub);
+    printf("Multiplication  %d\n" , mul);
+    printf("Reminder \t%d\n" , rem);
+
+    return 0;
+}
+
+#include<stdio.h>
+int main(){
+    int a,r,l,b;
+    float ac,as,ar,pc,ps,pr;
+    printf("Enter Side of Square : ");
+    scanf("%d" , &a);
+    as = a*a;
+    ps = 4*a;
+    printf("Area of Square :%.2f\n Perimeter of Square :%.2f\n",as,ps);
+    printf("Enter Radius of Circle : ");
+    scanf("%d" , &r);    
+    ac = 3.14*(r*r);
+    pc = 2*3.14*r;
+    printf("Area of Circle :%.2f\n Perimeter of Circle :%.2f\n",ac,pc);
+    printf("Enter Length of Rectangle : ");
+    scanf("%d" , &l);
+    printf("Enter Breadth of Rectangle : ");
+    scanf("%d" , &b);
+    ar = l*b;
+    pr = 2*(l+b);
+    printf("Area of Rectangle :%.2f\n Perimeter of Rectangle :%.2f\n",ar,pr);
+  
+    return 0;
+}
