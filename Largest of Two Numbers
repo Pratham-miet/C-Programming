@@ -1,0 +1,9 @@
+#include<stdio.h>
+int main(){
+    int x,y;
+    printf("Enter a Number");
+    scanf("%d %d",&x,&y);
+    (x<y)?printf("y=%d is largest than x=%d",y,x):("x=%d is largest than y=%d",x,y);
+    
+    return 0;
+}
