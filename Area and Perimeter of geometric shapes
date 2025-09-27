@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int r,a,l,w;
+    float ac,ar,as,pc,pr,ps;
+    scanf("%d\n%d\n%d %d",&r,&a,&l,&w);
+    ac = 3.1416*r*r;
+    pc = 2*3.1416*r;
+    as = a*a;
+    ps = 4*a;
+    ar = l*w;
+    pr = 2*(l+w);
+    printf("Circle: %.2f %.2f\n",ac,pc);
+    printf("Square: %.2f %.2f\n",as,ps);
+    printf("Rectangle: %.2f %.2f\n",ar,pr);
+    
+    return 0;
+}
