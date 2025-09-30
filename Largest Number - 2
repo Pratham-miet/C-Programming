@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+    int main() {
+    int A,B,C;
+    scanf("%d %d %d", &A,&B,&C);
+    int largest=A;
+    if(B>=largest && B>=C){
+        largest=B;
+        printf("%d",largest);
+    }
+    else if(largest>=C)
+        printf("%d",largest);
+    else {
+        largest=C;
+        printf("%d",largest);
+    }
+    return 0;
+}
