@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int n,remaining,a=0,temp;
+    scanf("%d", &n);
+    temp=n;
+    if(n<0){
+        n=-n;
+    }
+    for(; n!=0; n=n/10){
+        remaining=n%10;
+        a=a*10+remaining;
+    }
+    if(temp==a){
+        printf("Palindrome");
+    }
+    else{
+        printf("Not Palindrome");
+    }
+    return 0;
+}
