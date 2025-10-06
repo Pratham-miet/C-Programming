@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int n,First,Last;
+    scanf("%d", &n);
+    if(n<0){
+        n=-n;
+    }
+    Last=n%10;
+    for(; n>=10; n=n/10){
+        
+    }
+    First=n;
+    printf("%d %d", First,Last);
+    
+    return 0;
+}
