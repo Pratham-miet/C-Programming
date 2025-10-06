@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int n,sum=0,remaining;
+    scanf("%d", &n);
+    if (n<0){
+        n=-n;
+    }
+    for(; n!=0; n=n/10){
+        remaining=n%10;
+        sum=sum+remaining;
+    }
+    printf("%d", sum);
+    return 0;
+}
