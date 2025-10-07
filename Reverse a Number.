@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int num,first;
+    scanf("%d", &num);
+    if(num>=0 && num<=9){
+        first = num;
+        printf("%d", first);
+    }
+    else{
+        while(num!=0){
+            first = num%10;
+            num = num/10;
+            printf("%d", first);
+        }
+    }
+    return 0;
+}
