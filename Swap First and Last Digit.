@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+int main() {
+    int num,num2,count=0;
+    scanf("%d", &num);
+    num2 = num;
+    if(num>=0 && num<=9){
+        printf("%d", num);
+    }
+    else{
+        while(num2!=0){
+            num2 = num2/10;
+            count++;
+        }
+        int p = pow(10, count-1);
+        if(p%2 != 0)
+             p++;
+        int first = num/p;
+        num = num%p;
+        int last = num%10;
+        num = num/10;
+        num = last*p+num*10+first;
+        printf("%d", num);
+
+    }
+
+    return 0;
+}
