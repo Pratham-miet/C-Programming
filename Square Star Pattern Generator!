@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int row, coll, n;
+    scanf("%d", &n);
+    for(row=0; row<n; row++){
+        for(coll=0; coll<n; coll++){
+            printf("* ");
+        }
+        printf("\n");
+    }
+    return 0;
+}
