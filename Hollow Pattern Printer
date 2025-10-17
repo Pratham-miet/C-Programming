@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int N,M,row,coll;
+    scanf("%d %d", &N,&M);
+    for(row=1; row<=N; row++){
+        for(coll=1; coll<=M; coll++){
+            if(coll==M || coll==1 || row==1 || row==N)
+                printf("* ");
+            else{
+            printf("  ");
+            }
+        }
+        printf("\n");
+    }
+    return 0;
+}
