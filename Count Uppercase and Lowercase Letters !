@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+#include <ctype.h>
+
+int main() {
+    int countu=0,countl=0;
+    char str[1001];
+    scanf("%[^\n]", str);
+    for(int i=0; str[i]!='\0'; i++){
+        if(isupper(str[i])){
+            countu++;
+        }
+        else if(islower(str[i])){
+            countl++;
+        }
+    }
+    printf("%d %d", countu, countl);
+    return 0;
+}
