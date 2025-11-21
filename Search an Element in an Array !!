@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int n,num,temp,count=0;
+    scanf("%d",&n);
+    int list[n];
+    for(int i=1;i<=n;i++){
+        scanf("%d",&list[i]);
+    }
+    scanf("%d",&num);
+    for(int a=1;a<=n;a++){
+        temp=list[a];
+        if(temp==num){
+            printf("Element found at position %d",a);
+            count=1;
+            break;
+        }
+    }
+    if(count!=1){
+            printf("Element not found");
+        }
+    return 0;
+}
