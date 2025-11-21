@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int n,largest;
+    scanf("%d\n",&n);
+    int list[n];
+    for(int i=1;i<=n;i++){
+        scanf("%d",&list[i]);
+    }
+    largest=list[1];
+    for(int a=1;a<=n;a++){
+        if(list[a]>largest){
+            largest=list[a];
+        }
+    }
+    printf("%d",largest);
+    return 0;
+}
